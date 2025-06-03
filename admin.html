@@ -1,0 +1,45 @@
+html
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Админ Панел - Saymon Sez</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #2a2a3d;
+            border-radius: 10px;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="radio-container">
+    <h1>🔐 Админ Панел - Saymon Sez</h1>
+</div>
+
+<div class="admin-container">
+    <h3>➕ Додади Џингло</h3>
+    <input type="text" id="jingleInput" placeholder="YouTube Video ID">
+    <button onclick="addJingle()">Додади</button>
+
+    <h3>🕒 Постави Реклами</h3>
+    <input type="number" id="adTimeInput" placeholder="Време во минути">
+    <button onclick="setAdSchedule()">Постави</button>
+</div>
+
+<a href="index.html"><button style="margin-top: 20px;">⬅️ Назад кон радио</button></a>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
